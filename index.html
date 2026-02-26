@@ -55,7 +55,7 @@
       </div>
     </header>
     <main>
-      <!-- Hero section -->
+      <!-- #region Hero section -->
       <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">
@@ -64,7 +64,8 @@
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
-      <!-- Features section-->
+      <!-- #endregion -->
+      <!-- #region Features section-->
       <section class="benefits section">
         <div class="container benefits-container">
         <h2 class="visually-hidden">Our Features</h2>
@@ -120,7 +121,8 @@
         </ul>
         </div>
       </section>
-      <!-- Team section -->
+      <!-- #endregion -->
+      <!-- #region Team section -->
       <section class="team section">
         <div class="container team-container">
         <h2 class="team-title">Our Team</h2>
@@ -300,7 +302,8 @@
         </ul>
         </div>
       </section>
-      <!-- Portfolio section -->
+      <!-- #endregion -->
+      <!-- #region Portfolio section -->
       <section class="portfolio section" id="portfolio-section">
         <div class="container portfolio-container">
         <h2 class="portfolio-title">Our Portfolio</h2>
@@ -404,6 +407,7 @@
         </ul>
         </div>
       </section>
+      <!-- #endregion -->
     </main>
     <footer class="footer">
       <div class="container footer-container">
@@ -451,5 +455,54 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="modal-close" width="8" height="8">
+            <use class="close-icon" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="name-wrap">
+            <label class="name-label">Name
+              <div class="name-input-wrap">
+                <svg width="18" height="24">
+                  <use class="name-icon" href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input type="text" name="username">
+              </div>
+            </label>
+          </div>
+
+          <div class="phone-wrap">
+            <label class="phone-label">Phone
+              <div class="phone-input-wrap">
+                <svg width="18" height="24">
+                  <use class="phone-icon" href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input type="tel" name="usertel">
+              </div>
+            </label>
+          </div>
+
+          <div class="email-wrap">
+            <label class="email-label">Email
+              <div class="email-input-wrap">
+                <svg width="18" height="24">
+                  <use class="email-icon" href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input type="email" name="useremail">
+              </div>
+              <div class="comment-wrap">
+                <label class="comment-label">Comment
+                  <textarea name="comment" placeholder="Text input"></textarea>
+                </label>
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
